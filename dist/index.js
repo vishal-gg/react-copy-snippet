@@ -28,7 +28,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".copy_btn{all:unset;border-radius:6px;box-sizing:border-box;cursor:pointer;display:grid;height:2.5rem;padding:.5rem 1rem;place-content:center;transition:color .2s ease,background-color .2s ease;width:3rem}.copy_btn:hover{background-color:#f1f5f9}@media (prefers-color-scheme:dark){.copy_btn:hover{background-color:#1e293b}}.copy_btn>div>span{display:grid;left:50%;place-content:center;position:absolute;top:50%;transition:transform .2s ease-in-out,opacity .2s ease}";
+var css_248z = ".copy_btn{all:unset;border-radius:6px;box-sizing:border-box;color-scheme:light dark;cursor:pointer;display:grid;height:2.5rem;padding:.5rem 1rem;place-content:center;transition:color .2s ease,background-color .2s ease;width:3rem}@media (prefers-color-scheme:dark){.copy_btn:hover{background-color:#1e293b;color:#fff}}@media (prefers-color-scheme:light){.copy_btn:hover{background-color:#f1f5f9;color:#000}}.copy_btn>div>span{display:grid;left:50%;place-content:center;position:absolute;top:50%;transition:transform .2s ease-in-out,opacity .2s ease}";
 styleInject(css_248z);
 
 const useCopyToClipboard = ({ textContent }) => {

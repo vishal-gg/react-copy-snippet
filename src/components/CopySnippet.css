@@ -9,15 +9,19 @@
     place-content: center;
     border-radius: 6px;
     transition: color 200ms ease, background-color 200ms ease;
-}
-
-.copy_btn:hover {
-    background-color: #f1f5f9;
+    color-scheme: light dark
 }
 
 @media (prefers-color-scheme: dark) {
     .copy_btn:hover {
         background-color: #1e293b;
+        color: white;
+    }
+}
+@media (prefers-color-scheme: light) {
+    .copy_btn:hover {
+        background-color: #f1f5f9;
+        color: black;
     }
 }
 

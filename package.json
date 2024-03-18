@@ -1,6 +1,6 @@
 {
   "name": "react-copy-snippet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A React component and hook for copying text from an HTML element or directly. Includes a component for easy integration and a hook for custom copying functionality.",
   "main": "dist/index.js",
@@ -9,6 +9,10 @@
     "build": "npx rollup -c"
   },
   "keywords": ["copy-to-clipboard", "clipboard", "snippet", "react", "utility"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishal-gg/react-copy-snippet"
+  },
   "author": "vishal",
   "license": "ISC",
   "devDependencies": {
