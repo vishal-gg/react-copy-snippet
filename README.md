@@ -57,21 +57,14 @@ export default Demo
 we also have useCopyToClipboard hook
 
 ```bash
-import CopySnippet, { useCopyToClipboard } from 'react-copy-snippet'
-import { useRef } from 'react'
+import { useCopyToClipboard } from 'react-copy-snippet'
 
 const Demo = () => {
 
-  const snipRef = useRef(null)
   const {handleCopy, isCopied} = useCopyToClipboard({textContent: "hello world"})
 
   return (
     <div>
-      <pre ref={snipRef}>
-        this is an example text that is being copied.
-      </pre>
-      <CopySnippet ref={snipRef} />
-
       <button onClick={handleCopy}>{isCopied ? "copied!" : "copy"}</button>
     </div>
   )
