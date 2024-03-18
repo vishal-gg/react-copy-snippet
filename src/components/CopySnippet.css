@@ -1,0 +1,31 @@
+.copy_btn {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    width: 3rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+    border-radius: 6px;
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+.copy_btn:hover {
+    background-color: #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+    .copy_btn:hover {
+        background-color: #1e293b;
+    }
+}
+
+.copy_btn > div > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-content: center;
+    transition: transform 200ms ease-in-out, opacity 200ms ease;
+}
